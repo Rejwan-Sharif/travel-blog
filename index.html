@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adventure</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-link">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li class="btn"><a href="#footer">Contact</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" class="menu-btn">
+    </nav>
+
+    <header id="header">
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"> </div>
+            <h1>Wonderful Gift</h1>
+            <a href="#header" class="btn">Learn More</a>
+        </div>
+    </header>
+
+<!-- event section -->
+
+<section id="event">
+    <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="./images/img1.png" alt="">
+            <h4>Everest Camp Trek</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit pariatur culpa? Possimus, nam?</p>
+            <a href="#header" class="btn">Learn More</a>
+        </div>
+        <div class="col">
+            <img src="./images/img2.png" alt="">
+            <h4>Dzuku Vally Trek</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit pariatur culpa? Possimus, nam?</p>
+            <a href="#header" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Explore section -->
+
+<section id="explore">
+    <div class="explore-content">
+    <h1>Explore The World</h1>
+    <div class="line"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit atque ea quaerat accusamus ut.</p>
+    <a href="#explore" class="btn">Learn More</a>
+</div>
+</section>
+
+<!-- tours section -->
+
+<section id="tours">
+   <div class="row">
+    <div class="col content-col">
+        <h1>Upcoming Tours & Destination</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit atque ea quaerat accusamus ut.</p>
+    <a href="#tours" class="btn">Learn More</a>
+    </div>
+    <div class="col image-col">
+        <div class="image-gallery">
+            <img src="./images/img3.png" alt="">
+            <img src="./images/img4.png" alt="">
+            <img src="./images/img5.png" alt="">
+            <img src="./images/img6.png" alt="">
+        </div>
+    </div>
+   </div>
+</section>
+
+
+<!-- footer section -->
+
+<section id="footer">
+    <p>896 Baker Street, Bronx , NY 10160, New York, USA  | Phone: 000-463-353 | Email: contact@example.com</p>
+    <p>Copyright Rejwan Sharif</p>
+</section>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLink = document.querySelector('.nav-link')
+
+        menuBtn.addEventListener('click',()=>{
+            navLink.classList.toggle('mobile-menu')
+        });
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior : "smooth"
+        });
+    });
+});
+
+
+    </script>
+
+</body>
+</html>
