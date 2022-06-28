@@ -249,7 +249,7 @@ align-items: center;
 }
 
 .image-gallery img{
-    max-width: 250;
+    max-width: 300px;
     margin: 10px;
     transition: transform 5s ease;
     box-shadow: 5px 5px 5px 5px rgba(41, 71, 71, 0.5);
