@@ -243,18 +243,18 @@ p{
 
 #tours .image-gallery{
 display: flex;
-flex-wrap: wrap;
+flex-wrap:wrap;
 width: 100%;
 align-items: center;
 }
 
 .image-gallery img{
-   max-width: auto;
+    max-width: 250;
     margin: 10px;
     transition: transform 5s ease;
     box-shadow: 5px 5px 5px 5px rgba(41, 71, 71, 0.5);
 }
-.image-gallery:hover  img{
+.image-gallery img:hover{
     transform: translateX(2);
 }
 .content-col h1{
